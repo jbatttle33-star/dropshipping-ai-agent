@@ -24,4 +24,4 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          python "agent loop py2.py"
+         python "agent_loop.py 2.py"
