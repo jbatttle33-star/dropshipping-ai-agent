@@ -8,7 +8,7 @@ import json
 # Where memory is saved
 MEMORY_FILE = "C:\\Users\\Amiya\\memory.json"
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
+llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=st.secrets["GROQ_API_KEY"])
 
 def load_memory():
     if os.path.exists(MEMORY_FILE):
